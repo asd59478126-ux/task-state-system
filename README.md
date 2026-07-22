@@ -147,4 +147,4 @@ Task State System is a conceptual framework exploring how AI systems can transit
 
 ## Feedback
 
-For discussion and suggestions, please open a GitHub Issue.
+For discussion, suggestions, and feedback, please open a GitHub Issue or start a GitHub Discussion.
