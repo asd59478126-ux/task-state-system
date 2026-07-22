@@ -144,3 +144,7 @@ Future exploration:
 ## Author Note
 
 Task State System is a conceptual framework exploring how AI systems can transition from content generation tools into reliable task execution systems through structured application control.
+
+## Feedback
+
+For discussion and suggestions, please open a GitHub Issue.
