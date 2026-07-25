@@ -144,3 +144,35 @@ Future exploration:
 ## Author Note
 
 Task State System is a conceptual framework exploring how AI systems can transition from content generation tools into reliable task execution systems through structured application control.
+
+# Task State System
+
+Task State System is an open-source **AI application control and governance architecture**. It designs a structured, predictable control layer between non-deterministic Large Language Model (LLM) capabilities and real-world user workflows.
+
+As AI Agents evolve into complex, multi-stage automation tools, a fundamental engineering challenge emerges: LLMs easily suffer from **Goal Drift** and **Infinite Loop Meltdowns** within long-term context windows. This framework does not aim to improve the intelligence of the underlying AI models. Instead, it introduces a decoupled middleware framework to manage how AI capabilities are safely applied in enterprise-level tasks.
+
+---
+
+## 🏗️ Architecture & Component Decoupling
+
+The framework enforces a strict **Separation of Concerns (SoC)**, ensuring that raw user data ("the materials") never contaminates the operational workflow guides ("the process").
+
+
+## 🧩 核心控制組件說明 (Component Specifications)
+
+本倉庫包含以下 Level 1 的理論與架構規格定義組件：
+
+1. **00_說明文等級定義與總體架構**：奠定智慧層、控制層與資源層解耦的宏觀哲學。
+2. **01_任務態判定與建立規則**：嚴格控管入口邊界，並具備執行中途的「意圖突變防護機制」。
+3. **02_任務態資料結構與狀態管理**：固化靜態模型，定義任務全生命週期的持久化狀態（包含凍結與待人工介入）。
+4. **03_任務態執行流程與LLM交互**：規範動態行為，具備「非任務/閒聊輸入」的上下文物理隔離能力。
+5. **04_任務態驗證與效益評估**：品質出口把關，引入最高 3 次的回正重試上限與死循環熔斷機制。
+6. **任務期望描述規範 (RS規範)**：最新 v0.4 版本，導入 Role 通道物理隔離與 XML 結構化圍欄技術，徹底阻斷提示詞污染。
+7. **05_任務態實作開發規格**：將上述所有業務與防禦邏輯，收斂為開發人員必須遵守的工程鋼條。
+
+---
+
+## 🎯 當前進度與願景 (Current Status & Vision)
+本專案目前專注於**「理論模型與規格界定階段」**。我們相信，在寫下任何一行程式碼之前，唯有先確立完美的控制邊界與防禦機制，AI 系統才能在企業級場景中真正落地。
+
+歡迎所有對 AI Agent 治理、分散式狀態管理、防禦性 Prompt 工程感興趣的架構師與技術人員參與討論與優化。
